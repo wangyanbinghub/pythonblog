@@ -1,3 +1,6 @@
-from django.shortcuts import render
+#blog/views
 
-# Create your views here.
+from django.http import HttpResponse
+
+def index(request):
+    return HttpResponse("欢迎访问我的博客首页")

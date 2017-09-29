@@ -18,6 +18,9 @@ class Category(models.Model):
     """
     name = models.CharField(max_length=100)
 
+    def __str__(self):
+        return self.name
+
 #标签
 class Tag(models.Model):
     """
@@ -25,6 +28,9 @@ class Tag(models.Model):
     再次强调一定要继承 models.Model 类！
     """
     name = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.name
 
 #文章
 class Post(models.Model):
@@ -38,4 +44,7 @@ class Post(models.Model):
     tags = models.ManyToManyField(Tag,blank=True)
 
     author = models.ForeignKey(User)
+
+    def __str__(self):
+        return self.title
 

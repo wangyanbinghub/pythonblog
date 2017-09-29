@@ -81,6 +81,17 @@ DATABASES = {
     }
 }
 
+#mysql的配置方法
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'dxh_frontpos',
+#         'USER': 'root',
+#         'PASSWORD': 'migrsoft',
+#         'HOST': '127.0.0.1',
+#         'PORT': '13305',
+#     }
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/1.10/ref/settings/#auth-password-validators
